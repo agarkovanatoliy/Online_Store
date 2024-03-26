@@ -1,0 +1,267 @@
+FASHION* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.heder{
+    display: flex;
+    justify-content: space-between;
+    background: #222222;
+    padding: 18px 0;
+}
+
+.nav_left{
+    display: flex;
+    gap: 41px;
+    align-items: center;
+}
+
+.nav_right{
+    display: flex;
+    gap: 33px;
+    align-items: center;
+}
+
+.banner{
+    background: #f1e4e6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner_right{
+    border-left: 12px solid #f16d7f;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 24px;
+}
+
+.banner_right h1{
+    font-weight: 900;
+    font-size: 48px;
+    color: #222;
+    line-height: 0px;
+}
+
+.banner_right h2{
+    font-weight: 700;
+    font-size: 32px;
+    color: #222;
+    line-height: 0px;
+}
+
+.banner_header{
+    font-weight: 700;
+    font-size: 32px;
+    color: #f16d7f;
+}
+
+.shop{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1.5fr 1fr;
+    gap: 30px;
+    margin: 65px auto;
+}
+
+.shop img{
+    width: 360px;
+    height: 260px;
+}
+
+.accesories{
+    grid-column: span 3;
+}
+
+.accesories img{
+    width: 1140px;
+    height: 180px;
+}
+
+.shop h3{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    line-height: 15px;
+}
+
+.shop h2{
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #f16d7f;
+    line-height: 0px;
+}
+
+.blackout{
+    background: rgba(33, 22, 22, 0.7);
+    position: absolute;
+    width: 360px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blackout_accesories{
+    background: rgba(33, 22, 22, 0.7);
+    position: absolute;
+    width: 1140px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_card{
+    margin: 96px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section_card h2{
+    font-weight: 400;
+    font-size: 30px;
+    color: #222;
+    text-align: center;
+    line-height: 0px;
+}
+
+.p1{
+    font-weight: 400;
+    font-size: 14px;
+    color: #9f9f9f;
+    text-align: center;
+    line-height: 0px;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    margin: 48px auto;
+}
+
+.card_description{
+    padding: 24px 16px;
+    gap: 16px;
+}
+
+.card_description h3{
+    font-weight: 400;
+    font-size: 13px;
+    color: #000;
+}
+
+.card_description p{
+    font-weight: 300;
+    font-size: 14px;
+    color: #5d5d5d;
+}
+
+.card_description h4{
+    font-weight: 400;
+    font-size: 16px;
+    color: #f16d7f;
+}
+
+.section_card button{
+    border-color: #FF6A6A;
+    font-weight: 400;
+    font-size: 16px;
+    color: #f26376;
+    padding: 15px 40px;
+    background: #FFFFFF;
+}
+
+@media(min-width: 768px) and (max-width: 1140px){
+
+    .container{
+        max-width: 736px;
+    }
+    .heder{
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    .banner{
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    .banner img{
+        max-width: 386px;
+        max-height: 368px;
+    }
+
+    .banner_right h1{
+        font-size: 44px;
+    }
+
+    .banner_right h2{
+        font-size: 24px;
+    }
+
+    .banner_header{
+        font-size: 24px;
+    }
+
+    .shop{
+        gap: 19px;
+    }
+
+    .shop_card img{
+        max-width: 232px;
+        max-height: 167px;
+    }
+
+    .accesories img{
+        max-width: 734px;
+        max-height: 116px;
+    }
+
+    .blackout{
+        background: rgba(33, 22, 22, 0.7);
+        position: absolute;
+        width: 232px;
+        height: 167px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .blackout_accesories{
+        background: rgba(33, 22, 22, 0.7);
+        position: absolute;
+        width: 734px;
+        height: 116px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 16px;
+        margin: 48px auto;
+    }
+}
